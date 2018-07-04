@@ -34,8 +34,16 @@ for i in (0..guests.size-1)
   puts
 end
 
-puts
-
 #Create a hash combining the two array
-puts "Here is a supply list hash for your picnic: " 
-puts Hash[*guests.zip(supplies).flatten]
+responsibilities = {
+  "Anne" => "plates",
+  "Bob" => "cups"
+}
+
+#Print out what one of the guests is responsible for bringing
+puts "Anne is bringing " + responsibilities["Anne"]
+
+#Make a loop to put out each guest and the item their responsibile for bringing
+for guest, item in responsibilities do 
+  puts "#{guest} is bringing #{item}"
+end
