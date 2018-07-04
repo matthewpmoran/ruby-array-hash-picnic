@@ -26,6 +26,12 @@ puts
 #Create an array for picnic supplies
 supplies = ["plates", "cups", "chips", "cookies", "soda", "napkins"] 
 
+#Replace Anne with Aaron as a guest
+guests[0] = "Aaron"
+
+#Add Anne back into the guest list
+guests.push("Anne")
+
 #Make a loop to assign guests with an item to bring
 for i in (0..guests.size-1)
   print guests[i]
@@ -36,7 +42,7 @@ end
 
 #Create a hash combining the two array
 responsibilities = {
-  "Anne" => "plates",
+  "Aaron" => "plates",
   "Bob" => "cups"
 }
 
